@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/escuela.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Control Score</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>grade control</h1>
+        </div>
+
+        <div class="data">
+            <p class="name">Name</p>
+            <input type="text" name="Name" id="name" class="text-name">
+
+            <div class="score-data">
+                <p class="parraf">Score 1</p>
+                <input type="number" min="0" max="10" name="note1" id="note1" class="score">
+                <p class="parraf">Score 2</p>
+                <input type="number" min="0" max="10" name="note2" id="note2" class="score">
+                <p class="parraf">Score 3</p>
+                <input type="number" min="0" max="10" name="note3" id="note3" class="score">
+            </div>
+
+            <div class="btn-result">
+                <input type="button" value="Save Result" class="result-btn" onclick="averageGrade();">
+            </div>
+        </div>
+        
+        <div class="result">
+            <table>
+                <h2>Results</h2>
+                <tr>
+                    <th>Name</th>
+                    <th>score 1</th>
+                    <th>Score 2</th>
+                    <th>Score 3</th>
+                    <th>Final Score</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td id="nameStudent">-</td>
+                    <td id="score1">-</td>
+                    <td id="score2">-</td>
+                    <td id="score3">-</td>
+                    <td id="scoreResult">-</td>
+                    <td id="scoreStatus">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
